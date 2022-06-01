@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Niko">
+    <meta name="description" content="La Bourse est une organisation présente sur HabboCity de Niko qui vous permet d'investir des diamants et d'en gagner.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+    <meta name="theme-color" content="#317EFB">
+	<link rel="icon" sizes="512x512" href="img/icon.png">
+	<link rel="manifest" href="/manifest.json">
+	<!-- reuse same icon for Safari -->
+	<link rel="apple-touch-icon" href="img/icon.png">
+  
+	<!-- multiple icons for IE -->
+	<meta name="msapplication-square310x310logo" content="img/icon.png">
+	<link rel="apple-touch-icon" href="img/icon.png">
+	<meta name="msapplication-square70x70logo" content="img/icon.png">
+	<meta name="msapplication-square150x150logo" content="img/icon.png">
+	<meta name="msapplication-wide310x150logo" content="img/icon.png">
+    <!-- icon in the highest resolution we need it for -->
+    
+    <title>La Bourse</title>
+</head>
+<body style="margin-bottom: 100px;">
+    <div class="menu" style="position: fixed;">
+    
+    <button id="togg0" class="btn btn-dark btn-sm"><img src="./img/news.png" title="news"></button>
+    <button id="togg1" class="btn btn-dark btn-sm">Graphiques</button>
+    <!--<button id="togg4" class="btn btn-dark btn-sm">d</button>-->
+    
+    <label for="villemenu"><input id="villemenu" class="form-control form-meteo form-control-lg" type="text" placeholder="Ville"></label>
+    </div>
+
+<div class="haut">
+
+    <div class="container2">
+        <div class="row">
+    <div class="col-12 col-sm-2" style="background-color: #0B304A;padding: 10px;">
+        <div><img src="./img/logo.png"><br>
+    <h1>La Bourse</h1></div></div>
+    <div class="col" style="background-color: #0B304A; margin: 0 0 0 10px;padding: 10px;">
+        
+        <div class="row header-diamant" style="margin: inherit;"><div class="col"><p>Dans la bourse: <b>10</b><img src="./img/diamant.png" title="diamants"></p></div><div class="col"><p>Valeur de l'action: <b>10</b><img src="./img/diamant.png" title="diamants"></p></div><div class="col"><p>Nombre d'actions: <b>1</b></p></div></div></div>
+    <div class="daycurrent col-12 col-sm-2" style="margin: 0;padding: 0;background-color: #0B304A; padding: 10px;" id="block2">
+        <!--<div id="img" style="margin: auto;" class=""></div>-->
+
+
+
+        <div class="w3-content w3-display-container">
+
+
+
+            <div class="w3-display-container mySlides day0">
+                <div id="img" style="margin: auto;" class=""></div>
+
+                <div class="row">
+                    <div class="col"><button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button></div>
+                    <div class="col"><div class="ville"></div>
+                <div class="date"></div></div>
+                <div class="col"><button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button></div>
+                </div>
+
+            </div>
+            
+            <div class="w3-display-container mySlides day1">
+                <div id="img" style="margin: auto;" class=""></div>
+
+                <div class="row">
+                    <div class="col"><button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button></div>
+                    <div class="col"><div class="ville"></div>
+                <div class="date"></div></div>
+                <div class="col"><button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button></div>
+                </div>
+
+            </div>
+            
+            <div class="w3-display-container mySlides day2">
+                <div id="img" style="margin: auto;" class=""></div>
+
+                <div class="row">
+                    <div class="col"><button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button></div>
+                    <div class="col"><div class="ville"></div>
+                <div class="date"></div></div>
+                <div class="col"><button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button></div>
+                </div>
+
+            </div>
+            
+            <div class="w3-display-container mySlides day3">
+                <div id="img" style="margin: auto;" class=""></div>
+
+                <div class="row">
+                    <div class="col"><button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button></div>
+                    <div class="col"><div class="ville"></div>
+                <div class="date"></div></div>
+                <div class="col"><button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button></div>
+                </div>
+
+            </div>
+            
+            <div class="w3-display-container mySlides day4">
+                <div id="img" style="margin: auto;" class=""></div>
+
+                <div class="row">
+                    <div class="col"><button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button></div>
+                    <div class="col"><div class="ville"></div>
+                <div class="date"></div></div>
+                <div class="col"><button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button></div>
+                </div>
+
+            </div>
+
+
+            
+
+
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+
+
+
+
+    </div>
+
+</div>
+</div>
+
+</div>
+    
+
+
+
+    <div class="contenu" id="d0">
+        <div class="alert alert-danger" role="alert" style="background-color: #FF3701;
+        color: #FFFFFF;
+        border-color: #D33101;">
+            Dernières actualités
+          </div>
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col12 day0">
+<p>Bientôt</p>
+        </div>
+        </div>
+        </div>
+        <div class="alert alert-success" role="alert" style="background-color: #3AB54A;
+        color: #FFFFFF;
+        border-color: #319B3F;">
+            Autres actualités
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+            <div class="col12 day0">
+<p>Bientôt</p>
+            </div>
+            </div>
+            </div>
+
+    </div>
+    <div class="contenu" id="d1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col12" style="margin: auto;">
+                        <p>
+
+                            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTfY77ufRq2oQuvdw__FLWahNNoz6lvZpXg8n9nm1kgevIbYZ3zSfG6x5gJflCUPs9bTQhx2FwYEUxX/pubchart?oid=910573528&amp;format=interactive"></iframe>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="contenu" id="d2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col12 day2">
+                        <h2><div class="date"></div></h2>
+                        <p class="condition2"></p>
+                        <div class="temperaturemaxmin"></div>
+                        <div id="img" class=""></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="contenu" id="d3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col12 day3">
+                        <h2><div class="date"></div></h2>
+                        <p class="condition2"></p>
+                        <div class="temperaturemaxmin"></div>
+                        <div id="img" class=""></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="contenu" id="d4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col12 day4">
+                        <h2><div class="date"></div></h2>
+                        <p class="condition2"></p>
+                        <div class="temperaturemaxmin"></div>
+                        <div id="img" class=""></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+
+
+
+    
+        
+<div id="img" class=""></div>
+
+<!--<div id="maison"></div>
+<div id="arbre"></div>-->
+<!--<div id="cadre"></div>-->
+
+<script src="sw.js"></script>
+<script>
+  
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/sw.js')
+             .then(function() { console.log("Service Worker Registered"); });
+  }
+
+
+  // fonction qui check si appli installable
+  window.addEventListener('beforeinstallprompt', (e) => {
+      console.log("beforeinstallprompt");
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI notify the user they can add to home screen
+  showInstallPromotion();
+
+});
+
+function  showInstallPromotion() {
+//  alert("ok on peut installer");
+
+ $('#btnAdd').removeClass('d-none');
+
+}
+
+var btnAdd = document.getElementById("btnAdd");
+
+btnAdd.addEventListener('click', (e) => {
+// hide our user interface that shows our A2HS button
+btnAdd.style.display = 'none';
+// Show the prompt
+deferredPrompt.prompt();
+// Wait for the user to respond to the prompt
+deferredPrompt.userChoice
+  .then((choiceResult) => {
+    if (choiceResult.outcome === 'accepted') {
+      console.log('User accepted the A2HS prompt');
+    } else {
+      console.log('User dismissed the A2HS prompt');
+    }
+    deferredPrompt = null;
+  });
+});
+ 
+   
+</script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>
